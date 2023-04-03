@@ -10,11 +10,18 @@
       content="I am Piumika Dilshan.Currently I'm studying about software engineering."
     />
     <title>MyProfile | Piumika</title>
+    <link rel="stylesheet" href="assets/style/CSS/style.css" />
+    <link rel="stylesheet" href="assets/style/CSS/normalize.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header>
-      <img src="" alt="" />
+    <header id="hedder">
       <nav>
+        <img src="" alt="" />
         <a href="index.html">HOME</a>
         <a href="about.html">ABOUT</a>
         <a href="">SKILLS</a>
@@ -28,10 +35,10 @@
     </header>
 
     <main>
-      <section>
-        <article>
+      <section id="main">
+        <article id="article">
           <h4>Welcome to My Profile</h4>
-          <h1>MY NAME PIUMIKA</h1>
+          <h1 id="myName">MY NAME PIUMIKA</h1>
           <h4>Student | Web Developer</h4>
           <p>
             Currently I’m studying about Software Engineering And,<br />
@@ -40,17 +47,25 @@
           <button>HIRE ME</button>
         </article>
         <aside>
-          <img src="assets/Main image.png" alt="main image" width="200px" />
+          <img
+            src="assets/Main image.png"
+            alt="main image"
+            width="200px"
+            id="mainImage"
+          />
         </aside>
       </section>
 
       <section>
         <aside>
-          <img src="assets/About image.png" alt="about image" width="200px" />
+          <img src="assets/About image.png" alt="about image" width="400px" />
         </aside>
         <article>
           <h5>Welcome to My profile</h5>
-          <h2>It's My Pleasure To Introduce<br />About Myself.</h2>
+          <h2>
+            It's My Pleasure To Introduce<br />
+            >About Myself. >
+          </h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum labore
             vero enim quo soluta itaque libero eveniet? Aspernatur, rerum saepe
@@ -69,51 +84,54 @@
         <h4>Let’s see My Projects</h4>
         <h2>What Are My Best Projects?</h2>
         <h5>Java | MySQL | OOP | JavaFX | HTML | CSS | Java Script</h5>
-        <div>
-          <img
-            src="assets/My POS.png"
-            alt="Pharmacy pos system"
-            width="250px"
-          />
-          <h2>POS SYSTEM</h2>
-          <p>
-            This is a POS System for Pharmacy. <br />
-            I developed this using Java,JavaFx <br />
-            And MySQL.(This project is final <br />
-            project in My 1st semester).
-          </p>
-          <button>WATCH</button><br /><br />
-        </div>
-        <div>
-          <img
-            src="assets/My POS.png"
-            alt="Pharmacy pos system"
-            width="250px"
-          />
-          <h2>POS SYSTEM</h2>
-          <p>
-            This is a POS System for Pharmacy. <br />
-            I developed this using Java,JavaFx <br />
-            And MySQL.(This project is final <br />
-            project in My 1st semester).
-          </p>
-          <button>WATCH</button><br /><br />
-        </div>
-        <div>
-          <img
-            src="assets/My POS.png"
-            alt="Pharmacy pos system"
-            width="250px"
-          />
-          <h2>POS SYSTEM</h2>
-          <p>
-            This is a POS System for Pharmacy. <br />
-            I developed this using Java,JavaFx <br />
-            And MySQL.(This project is final <br />
-            project in My 1st semester).
-          </p>
-          <button>WATCH</button>
-        </div>
+        <section id="Introduce">
+          <div>
+            <img
+              src="assets/My POS.png"
+              alt="Pharmacy pos system"
+              width="250px"
+            />
+            <h2>POS SYSTEM</h2>
+            <p>
+              This is a POS System for Pharmacy. <br />
+              I developed this using Java,JavaFx <br />
+              And MySQL.(This project is final <br />
+              project in My 1st semester).
+            </p>
+            <button>WATCH</button><br /><br />
+          </div>
+          <div>
+            <img
+              src="assets/My POS.png"
+              alt="Pharmacy pos system"
+              width="250px"
+            />
+            <h2>POS SYSTEM</h2>
+            <p>
+              This is a POS System for Pharmacy. <br />
+              I developed this using Java,JavaFx <br />
+              And MySQL.(This project is final <br />
+              project in My 1st semester).
+            </p>
+            <button>WATCH</button><br /><br />
+          </div>
+          <div>
+            <img
+              src="assets/My POS.png"
+              alt="Pharmacy pos system"
+              width="250px"
+            />
+            <h2>POS SYSTEM</h2>
+            <p>
+              This is a POS System for Pharmacy. <br />
+              I developed this using Java,JavaFx <br />
+              And MySQL.(This project is final <br />
+              project in My 1st semester).
+            </p>
+            <button>WATCH</button>
+          </div>
+        </section>
+
         <button>SHOW ALL</button>
       </section>
       <section></section>
@@ -213,5 +231,17 @@
         </div>
       </address>
     </footer>
+
+    <script>
+      let name = $("#myName").text();
+      var position = 0;
+
+      function nameAnimated() {
+        $("#myName").text(name.substr(0, position));
+        position++;
+      }
+      setTimeout(nameAnimated, 3000);
+      setInterval(nameAnimated, 150);
+    </script>
   </body>
 </html>
