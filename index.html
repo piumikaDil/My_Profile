@@ -12,6 +12,7 @@
     <title>MyProfile | Piumika</title>
     <link rel="stylesheet" href="assets/style/CSS/style.css" />
     <link rel="stylesheet" href="assets/style/CSS/normalize.css" />
+    <!-- <link rel="stylesheet" href="assets/boostrap/bootstrap/css/bootstrap.css" /> -->
     <script
       src="https://code.jquery.com/jquery-3.6.3.js"
       integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
@@ -19,19 +20,17 @@
     ></script>
   </head>
   <body>
-    <header id="hedder">
-      <nav>
-        <img src="" alt="" />
-        <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT</a>
-        <a href="">SKILLS</a>
-        <a href="projects.html">PROJECTS</a>
-        <a href="gallery.html">GALLARY</a>
-        <a href="">CONTACT</a>
+    <header id="header">
+      <img src="" alt="" />
+      <nav id="nav">
+        <ul id="ul">
+          <li class="li">Home</li>
+          <li class="li">Services</li>
+          <li class="li">Contact</li>
+          <li class="li">About us</li>
+        </ul>
+        <button class="button contact-button">QUICK CONTACT</button>
       </nav>
-      <aside>
-        <button>QUICK CONTACT</button>
-      </aside>
     </header>
 
     <main>
@@ -44,27 +43,32 @@
             Currently I’m studying about Software Engineering And,<br />
             will hope to be a skillful Software Engineer.
           </p>
-          <button>HIRE ME</button>
+          <button class="button hire-btn">HIRE ME</button>
         </article>
-        <aside>
-          <img
+        <aside id="aside">
+          <!-- <img
             src="assets/Main image.png"
             alt="main image"
             width="200px"
             id="mainImage"
-          />
+          /> -->
         </aside>
       </section>
 
-      <section>
+      <section id="introduce">
         <aside>
-          <img src="assets/About image.png" alt="about image" width="400px" />
+          <img
+            src="assets/about image.png"
+            alt="about image"
+            width="400px"
+            id="about-image"
+          />
         </aside>
-        <article>
+        <article id="intro-article">
           <h5>Welcome to My profile</h5>
           <h2>
             It's My Pleasure To Introduce<br />
-            >About Myself. >
+            About Myself.
           </h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum labore
@@ -84,7 +88,7 @@
         <h4>Let’s see My Projects</h4>
         <h2>What Are My Best Projects?</h2>
         <h5>Java | MySQL | OOP | JavaFX | HTML | CSS | Java Script</h5>
-        <section id="Introduce">
+        <section id="projects">
           <div>
             <img
               src="assets/My POS.png"

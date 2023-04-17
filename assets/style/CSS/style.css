@@ -2,7 +2,11 @@
   position: relative;
   background-color: #ccd1e5;
   width: 100%;
-  height: 92vh;
+  height: 95vh;
+}
+
+#aside {
+  background-image: url("/assets/Main\ image.png");
 }
 
 ::-webkit-scrollbar {
@@ -24,17 +28,79 @@
 #mainImage {
   position: absolute;
   right: 100px;
-  width: 710px;
+  width: 50vw;
+
   bottom: 0px;
+  box-shadow: 100px black;
 }
 
-#hedder {
-  position: sticky;
-  background-color: aquamarine;
+#projects {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-#Introduce {
+#introduce {
+  margin: 150px 0 0 200px;
   position: relative;
   display: flex;
   justify-content: space-around;
+}
+
+header {
+  position: relative;
+  height: 60px;
+  background-color: #ccd1e5;
+}
+
+.li {
+  display: inline-block;
+  padding: 0 30px 0 30px;
+  cursor: pointer;
+  color: #001c59;
+}
+
+#ul {
+  position: absolute;
+  right: 500px;
+  top: 15px;
+  list-style: none;
+  color: black;
+}
+
+.contact-button {
+  position: absolute;
+  right: 50px;
+  top: 10px;
+  padding: 10px;
+}
+
+.navbar {
+  background-color: red;
+}
+
+.button {
+  background-color: #ff416c;
+  border: none;
+  border-radius: 100px;
+  color: white;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #ff416c;
+  border: 2px solid #ff416c;
+}
+
+.hire-btn {
+  width: 100px;
+  height: 40px;
+}
+
+#about-image {
+  background-color: gray;
+}
+
+#intro-article {
+  margin-left: 100px;
 }
