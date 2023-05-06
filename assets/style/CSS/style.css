@@ -3,7 +3,7 @@ body {
 }
 
 .main-section {
-  background-image: url(/assets/Main\ image.png);
+  background-image: url("../../Main\ image.png");
   background-size: 850px 1000px;
   background-position: 100%;
   background-repeat: no-repeat;
