@@ -22,22 +22,26 @@
   <body>
     <header id="header">
       <img src="" alt="" />
-      <nav id="nav">
+      <nav>
         <ul id="ul">
           <li class="li">Home</li>
-          <li class="li">Services</li>
+          <li class="li">About</li>
+          <li class="li">Skills</li>
+          <li class="li">Projects</li>
+          <li class="li">Gallery</li>
           <li class="li">Contact</li>
-          <li class="li">About us</li>
         </ul>
         <button class="button contact-button">QUICK CONTACT</button>
       </nav>
     </header>
 
     <main>
-      <section id="main">
+      <section class="main-section">
         <article id="article">
-          <h4>Welcome to My Profile</h4>
-          <h1 id="myName">MY NAME PIUMIKA</h1>
+          <h4 class="main-headders">Welcome to My Profile</h4>
+          <h1 class="main-headders" id="myName">
+            MY NAME <span class="span">PIUMIKA</span>
+          </h1>
           <h4>Student | Web Developer</h4>
           <p>
             Currently I’m studying about Software Engineering And,<br />
@@ -45,14 +49,6 @@
           </p>
           <button class="button hire-btn">HIRE ME</button>
         </article>
-        <aside id="aside">
-          <!-- <img
-            src="assets/Main image.png"
-            alt="main image"
-            width="200px"
-            id="mainImage"
-          /> -->
-        </aside>
       </section>
 
       <section id="introduce">
@@ -65,10 +61,10 @@
           />
         </aside>
         <article id="intro-article">
-          <h5>Welcome to My profile</h5>
-          <h2>
+          <h3 class="main-headders">Welcome to My profile</h3>
+          <h2 class="main-headders">
             It's My Pleasure To Introduce<br />
-            About Myself.
+            <span class="span">About Myself.</span>
           </h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum labore
@@ -85,64 +81,77 @@
       </section>
       <section></section>
       <section>
-        <h4>Let’s see My Projects</h4>
-        <h2>What Are My Best Projects?</h2>
-        <h5>Java | MySQL | OOP | JavaFX | HTML | CSS | Java Script</h5>
+        <section class="headders">
+          <h3 class="main-headders">Let’s see My Projects</h3>
+          <h2 class="main-headders">
+            What Are My Best<span class="span"> Projects?</span>
+          </h2>
+          <h5>Java | MySQL | OOP | JavaFX | HTML | CSS | Java Script</h5>
+        </section>
+
         <section id="projects">
           <div>
             <img
+              class="project-images"
               src="assets/My POS.png"
               alt="Pharmacy pos system"
               width="250px"
             />
-            <h2>POS SYSTEM</h2>
+            <h2 class="main-headders">POS SYSTEM</h2>
             <p>
               This is a POS System for Pharmacy. <br />
               I developed this using Java,JavaFx <br />
               And MySQL.(This project is final <br />
               project in My 1st semester).
             </p>
-            <button>WATCH</button><br /><br />
+            <button class="button">WATCH</button><br /><br />
           </div>
           <div>
             <img
+              class="project-images"
               src="assets/My POS.png"
               alt="Pharmacy pos system"
               width="250px"
             />
-            <h2>POS SYSTEM</h2>
+            <h2 class="main-headders">POS SYSTEM</h2>
             <p>
               This is a POS System for Pharmacy. <br />
               I developed this using Java,JavaFx <br />
               And MySQL.(This project is final <br />
               project in My 1st semester).
             </p>
-            <button>WATCH</button><br /><br />
+            <button class="button">WATCH</button><br /><br />
           </div>
           <div>
             <img
+              class="project-images"
               src="assets/My POS.png"
               alt="Pharmacy pos system"
               width="250px"
             />
-            <h2>POS SYSTEM</h2>
+            <h2 class="main-headders">POS SYSTEM</h2>
             <p>
               This is a POS System for Pharmacy. <br />
               I developed this using Java,JavaFx <br />
               And MySQL.(This project is final <br />
               project in My 1st semester).
             </p>
-            <button>WATCH</button>
+            <button class="button">WATCH</button>
           </div>
         </section>
 
-        <button>SHOW ALL</button>
+        <button class="button">SHOW ALL</button>
       </section>
       <section></section>
-      <section>
-        <h4>Contact Details</h4>
-        <h2>Do You Want Contact Me?</h2>
-        <h5>Java | MySQL | OOP | JavaFX | HTML | CSS | Java Script</h5>
+      <section class="form-sec">
+        <section class="headders">
+          <h3 class="main-headders">Contact Details</h3>
+          <h2 class="main-headders">
+            Do You Want Contact<span class="span"> Me?</span>
+          </h2>
+          <h5>Java | MySQL | OOP | JavaFX | HTML | CSS | Java Script</h5>
+        </section>
+
         <form>
           <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="Email" /><br /><br />
@@ -155,7 +164,7 @@
             placeholder="Message..."
           ></textarea>
           <br /><br />
-          <input type="submit" /><br /><br />
+          <input class="button" type="submit" /><br /><br />
         </form>
       </section>
     </main>
@@ -163,7 +172,7 @@
     <footer>
       <button>Back to Top</button>
       <address>
-        <h4>REACH OUT TO ME HERE</h4>
+        <h3>REACH OUT TO ME HERE</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
           ab accusamus magni explicabo, modi hic, cumque repudiandae porro
@@ -208,7 +217,7 @@
         </div>
       </address>
       <address>
-        <h4>HAVE QUESTION?</h4>
+        <h3>HAVE QUESTION?</h3>
         <div>
           <img
             src="assets/address.png"
@@ -236,7 +245,7 @@
       </address>
     </footer>
 
-    <script>
+    <!-- <script>
       let name = $("#myName").text();
       var position = 0;
 
@@ -246,6 +255,6 @@
       }
       setTimeout(nameAnimated, 3000);
       setInterval(nameAnimated, 150);
-    </script>
+    </script> -->
   </body>
 </html>
