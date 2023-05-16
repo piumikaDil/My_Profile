@@ -13,16 +13,23 @@
     <link rel="stylesheet" href="assets/style/CSS/style.css" />
     <link rel="stylesheet" href="assets/style/CSS/normalize.css" />
     <!-- <link rel="stylesheet" href="assets/boostrap/bootstrap/css/bootstrap.css" /> -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.js"
-      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
       crossorigin="anonymous"
-    ></script>
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <div id="pre-loader">
+      <!-- <img src="assets/images/pre-loader2.gif" alt="" /> -->
+    </div>
+
     <header id="header">
-      <img src="" alt="" />
       <nav>
+        <img src="assets/images/logo.png" style="z-index: 9999" alt="logo" />
+
         <ul id="ul">
           <li class="li">Home</li>
           <li class="li"><a href="about.html">About</a></li>
@@ -42,8 +49,8 @@
           <h1 class="main-headders" id="myName">
             MY NAME <span class="span">PIUMIKA</span>
           </h1>
-          <h4>Student | Web Developer</h4>
-          <p>
+          <h4 class="sub-title">Student | Web Developer</h4>
+          <p class="paragraph">
             Currently I’m studying about Software Engineering And,<br />
             will hope to be a skillful Software Engineer.
           </p>
@@ -51,49 +58,63 @@
         </article>
       </section>
 
+      <!-- //////////////////////////////////////////////////// About section ////////////////////////////////////////////////////////////////// -->
+
       <section id="introduce">
-        <aside>
-          <img
-            src="assets/About image.png"
-            alt="about image"
-            width="400px"
-            id="about-image"
-          />
+        <aside class="aside">
+          <div id="about-image"></div>
         </aside>
         <article id="intro-article">
           <h3 class="main-headders">Welcome to My profile</h3>
-          <h2 class="main-headders">
+          <h2 class="main-headders h2-tag">
             It's My Pleasure To Introduce<br />
             <span class="span">About Myself.</span>
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum labore
+            Hello,I am
+            <span class="name-my"><u>Piumika Dilshan.</u> </span> Currently I am
+            doing my higher study about Software Engineering.Now I can develop
+            some Applications using Java,HTML,CSS & JS.So my future vision is be
+            a skillfull Software Engineer after my higher studing.
+            <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum labore
             vero enim quo soluta itaque libero eveniet? Aspernatur, rerum saepe
-            esse aliquid sed corrupti facere, odit vel sint, sequi ipsa!
+            esse aliquid sed corrupti facere, odit vel sint, sequi ipsa! -->
           </p>
-          <div>
-            <p><b>Phone :</b> (+94)719515194</p>
-            <p><b>Email :</b> piumikaDil@gmail.com</p>
-            <p><b>Address :</b> Welangolla,WewalaWewa,Dambulla.</p>
+          <h3 class="main-headders">What are my values?</h3>
+          <p>
+            When I work with my project, I focus on understanding the business
+            goals and delivering a final product that will really work for the
+            client.
+          </p>
+          <div id="min-contactt">
+            <p><span class="min-contact">Phone :</span> (+94)719515194</p>
+            <p><span class="min-contact">Email :</span> piumikaDil@gmail.com</p>
+            <p>
+              <span class="min-contact">Address :</span>
+              Welangolla,WewalaWewa,Dambulla.
+            </p>
           </div>
-          <button>About Me</button><br /><br />
+          <button class="button about-btn">About Me</button><br /><br />
         </article>
       </section>
       <section></section>
+
+      <!-- //////////////////////////////////////////////////// Priject section ////////////////////////////////////////////////////////////////// -->
+
       <section>
         <section class="headders">
           <h3 class="main-headders">Let’s see My Projects</h3>
-          <h2 class="main-headders">
+          <h2 class="main-headders h2-tag">
             What Are My Best<span class="span"> Projects?</span>
           </h2>
           <h5>Java | MySQL | OOP | JavaFX | HTML | CSS | Java Script</h5>
         </section>
 
         <section id="projects">
-          <div>
+          <div class="pos-system1">
             <img
               class="project-images"
-              src="assets/My POS.png"
+              src="assets/images/My POS.png"
               alt="Pharmacy pos system"
               width="250px"
             />
@@ -106,10 +127,10 @@
             </p>
             <button class="button">WATCH</button><br /><br />
           </div>
-          <div>
+          <div class="pos-system2">
             <img
               class="project-images"
-              src="assets/My POS.png"
+              src="assets/images/My POS.png"
               alt="Pharmacy pos system"
               width="250px"
             />
@@ -122,10 +143,10 @@
             </p>
             <button class="button">WATCH</button><br /><br />
           </div>
-          <div>
+          <div class="pos-system3">
             <img
               class="project-images"
-              src="assets/My POS.png"
+              src="assets/images/My POS.png"
               alt="Pharmacy pos system"
               width="250px"
             />
@@ -140,109 +161,146 @@
           </div>
         </section>
 
-        <button class="button">SHOW ALL</button>
+        <button class="button show-btn">SHOW ALL</button>
       </section>
-      <section></section>
+
+      <!-- //////////////////////////////////////////////////// Gallery section ////////////////////////////////////////////////////////////////// -->
+
+      <section>
+        <section class="headders">
+          <h3 class="main-headders">Let’s see My Gallery</h3>
+          <h2 class="main-headders h2-tag">
+            What Are My Handsome<span class="span"> Photos?</span>
+          </h2>
+          <h5>Java | MySQL | OOP | JavaFX | HTML | CSS | Java Script</h5>
+        </section>
+        <section class="slider-container">
+          <div class="image-container">
+            <img src="assets/images/my2_900x500.jpeg" alt="image" />
+            <img src="assets/images/image1_1_900x500.jpeg" alt="image" />
+            <img src="assets/images/image2_900x500.jpeg" alt="image" />
+            <img src="assets/images/my3.jpeg" alt="image" />
+            <img src="assets/images/my4.jpeg" alt="image" />
+          </div>
+          <i class="fas fa-angle-double-left btn prev"></i>
+          <i class="fas fa-angle-double-right btn next"></i>
+        </section>
+      </section>
+
+      <!-- //////////////////////////////////////////////////// Contact section ////////////////////////////////////////////////////////////////// -->
+
       <section class="form-sec">
         <section class="headders">
           <h3 class="main-headders">Contact Details</h3>
-          <h2 class="main-headders">
+          <h2 class="main-headders h2-tag">
             Do You Want Contact<span class="span"> Me?</span>
           </h2>
           <h5>Java | MySQL | OOP | JavaFX | HTML | CSS | Java Script</h5>
         </section>
 
         <form>
-          <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Email" /><br /><br />
-          <input type="text" placeholder="Subject" /><br /><br />
+          <div class="form">
+            <input
+              class="input-1 first-input"
+              type="text"
+              placeholder="Your Name"
+            />
+            <input
+              class="input-1"
+              type="email"
+              placeholder="Email"
+            /><br /><br />
+          </div>
+          <input
+            class="message subject"
+            type="text"
+            placeholder="Subject"
+          /><br /><br />
           <textarea
             name="message"
-            id="message"
+            class="message"
             cols="30"
             rows="10"
             placeholder="Message..."
           ></textarea>
           <br /><br />
-          <input class="button" type="submit" /><br /><br />
+          <input class="button submit-button" type="submit" /><br /><br />
         </form>
       </section>
     </main>
 
+    <!-- //////////////////////////////////////////////////// Footer ////////////////////////////////////////////////////////////////// -->
+
     <footer>
-      <button>Back to Top</button>
-      <address>
-        <h3>REACH OUT TO ME HERE</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
-          ab accusamus magni explicabo, modi hic, cumque repudiandae porro
-          eligendi eaque aperiam corrupti cupiditate facilis nostrum molestias?
-          Odio pariatur expedita quis.
-        </p>
-        <div>
-          <a href="">
-            <img
-              src="assets/facebook.png"
-              alt="facebook icon"
-              style="background-color: black"
-            />
-          </a>
-        </div>
-        <div>
-          <a href="">
-            <img
-              src="assets/github.png"
-              alt="facebook icon"
-              style="background-color: black"
-            />
-          </a>
-        </div>
-        <div>
-          <a href="">
-            <img
-              src="assets/linkedin.png"
-              alt="facebook icon"
-              style="background-color: black"
-            />
-          </a>
-        </div>
-        <div>
-          <a href="">
-            <img
-              src="assets/youtube.png"
-              alt="facebook icon"
-              style="background-color: black"
-            />
-          </a>
-        </div>
-      </address>
-      <address>
-        <h3>HAVE QUESTION?</h3>
-        <div>
-          <img
-            src="assets/address.png"
-            alt="addrress"
-            style="background-color: black"
-          />
-          <address>Welangolla,Wewalawewa,Dambulla</address>
-        </div>
-        <div>
-          <img
-            src="assets/call.png"
-            alt="call"
-            style="background-color: black"
-          />
-          <a href="tel:(+94)719515194">(+94)719515194 </a>
-        </div>
-        <div>
-          <img
-            src="assets/mail-account.png"
-            alt="E-mail"
-            style="background-color: black"
-          />
-          <a href="mailto:piumikadil@gmail.com">piumikaDil@gmail.com</a>
-        </div>
-      </address>
+      <button class="back-btn">Back to Top</button>
+      <section class="footer-sec">
+        <address class="address1">
+          <h3>REACH OUT TO ME HERE</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Praesentium ab accusamus magni explicabo, modi hic, cumque
+            repudiandae porro eligendi eaque aperiam corrupti cupiditate facilis
+            nostrum molestias? Odio pariatur expedita quis.
+          </p>
+          <div class="social-icons">
+            <div>
+              <a href="">
+                <img
+                  class="social-img"
+                  src="assets/images/facebook.png"
+                  alt="facebook icon"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img
+                  class="social-img"
+                  src="assets/images/github.png"
+                  alt="github icon"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img
+                  class="social-img"
+                  src="assets/images/linkedin.png"
+                  alt="linkdin icon"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img
+                  class="social-img"
+                  src="assets/images/youtube.png"
+                  alt="facebook icon"
+                />
+              </a>
+            </div>
+          </div>
+        </address>
+        <address class="address2">
+          <h3>HAVE QUESTION?</h3>
+          <div class="address-icons">
+            <img src="assets/images/address.png" alt="addrress" />
+            <p>Welangolla,Wewalawewa,Dambulla</p>
+          </div>
+          <div class="address-icons">
+            <img src="assets/images/call.png" alt="call" />
+            <p><a class="a" href="tel:(+94)719515194">(+94)719515194 </a></p>
+          </div>
+          <div class="address-icons">
+            <img src="assets/images/mail-account.png" alt="E-mail" />
+            <p>
+              <a class="a" href="mailto:piumikadil@gmail.com"
+                >piumikaDil@gmail.com</a
+              >
+            </p>
+          </div>
+        </address>
+      </section>
     </footer>
 
     <!-- <script>
@@ -256,5 +314,12 @@
       setTimeout(nameAnimated, 3000);
       setInterval(nameAnimated, 150);
     </script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/pages/about page/assests/styles/js.js"></script>
   </body>
 </html>
