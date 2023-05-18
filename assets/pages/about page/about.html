@@ -13,60 +13,74 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- link normalize -->
+    <link rel="stylesheet" href="../../style/CSS/normalize.css">
 
     <title>About | Piumika</title>
   </head>
   <body>
-    <header>
-      <img src="" alt="" />
+    <header id="header">
       <nav>
-        <a href="">HOME</a>
-        <a href="">ABOUT</a>
-        <a href="">SKILLS</a>
-        <a href="">PROJECTS</a>
-        <a href="">GALLARY</a>
-        <a href="">CONTACT</a>
+        <img id="logo" src="assests/images/logo.png" style="z-index: 9999" alt="logo" />
+        <ul id="ul">
+          <li class="li">Home</li>
+          <li class="li"><a href="about.html">About</a></li>
+          <li class="li"><a href=""></a> Skills</li>
+          <li class="li"><a href="projects.html">Projects</a></li>
+          <li class="li"><a href="gallery.html">Gallery</a></li>
+          <li class="li">Contact</li>
+        </ul>
+        <button class="button contact-button">QUICK CONTACT</button>
       </nav>
-      <aside>
-        <button>QUICK CONTACT</button>
-      </aside>
     </header>
     <main>
-      <section>
-        <article>
-          <h4>Welcome to My Profile</h4>
-          <h1 data-aos="fade-down-left">MY NAME PIUMIKA</h1>
-          <h4>Student | Web Developer</h4>
-          <p>
+      <section class="main-section">
+        <article id="article">
+          <h4 class="main-headders">Welcome to My Profile</h4>
+          <h1 class="main-headders" id="myName">
+            MY NAME <span class="span">PIUMIKA</span>
+          </h1>
+          <h4 class="sub-title">Student | Web Developer</h4>
+          <p class="paragraph">
             Currently I’m studying about Software Engineering And,<br />
             will hope to be a skillful Software Engineer.
           </p>
-          <button>HIRE ME</button>
+          <button class="button hire-btn">HIRE ME</button>
         </article>
-        <aside>
-          <img src="assets/Main image.png" alt="main image" width="200px" />
-        </aside>
       </section>
-      <section>
-        <h2>About me</h2>
-        <h5>Everything you need to know about me</h5>
-        <aside>
-          <img src="assets/About image.png" alt="about image" width="200px" />
+
+      <section id="introduce">
+        <aside class="aside">
+          <div id="about-image"></div>
         </aside>
-        <article>
-          <h5>Welcome to My profile</h5>
-          <h2>It's My Pleasure To Introduce<br />About Myself.</h2>
+        <article id="intro-article">
+          <h3 class="main-headders">Welcome to My profile</h3>
+          <h2 class="main-headders h2-tag">
+            It's My Pleasure To Introduce<br />
+            <span class="span">About Myself.</span>
+          </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum labore
-            vero enim quo soluta itaque libero eveniet? Aspernatur, rerum saepe
-            esse aliquid sed corrupti facere, odit vel sint, sequi ipsa!
+            Hello,I am
+            <span class="name-my"><u>Piumika Dilshan.</u> </span> Currently I am
+            doing my higher study about Software Engineering.Now I can develop
+            some Applications using Java,HTML,CSS & JS.So my future vision is be
+            a skillfull Software Engineer after my higher studing.
           </p>
-          <div>
-            <p><b>Phone :</b> (+94)719515194</p>
-            <p><b>Email :</b> piumikaDil@gmail.com</p>
-            <p><b>Address :</b> Welangolla,WewalaWewa,Dambulla.</p>
+          <h3 class="main-headders">What are my values?</h3>
+          <p>
+            When I work with my project, I focus on understanding the business
+            goals and delivering a final product that will really work for the
+            client.
+          </p>
+          <div id="min-contactt">
+            <p><span class="min-contact">Phone :</span> (+94)719515194</p>
+            <p><span class="min-contact">Email :</span> piumikaDil@gmail.com</p>
+            <p>
+              <span class="min-contact">Address :</span>
+              Welangolla,WewalaWewa,Dambulla.
+            </p>
           </div>
-          <button>About Me</button><br /><br />
+          <button class="button about-btn">About Me</button><br /><br />
         </article>
       </section>
       <section class="time-line">
@@ -184,26 +198,29 @@
           </div>
         </div> -->
       </section>
-      <footer style="background-color: black">
+      <footer class="footer">
+      <div>
         <a href="https://github.com/piumikaDil" target="_blank">
-          <img src="assets/github.png" alt="github" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/piumika-dilshan-b69018252/"
-          target="_blank"
-        >
-          <img src="assets/linkedin.png" alt="linkdin" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/piumika-dilshan-b69018252/"
-          target="_blank"
-        >
-          <img src="assets/youtube.png" alt="Youtube" />
-        </a>
-        <a href="https://web.facebook.com/dilshan.arrora/" target="_blank">
-          <img src="assets/facebook.png" alt="facebook" />
-        </a>
-      </footer>
+        <img src="assests/images/github.png" alt="github" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/piumika-dilshan-b69018252/"
+        target="_blank"
+      >
+        <img src="assests/images/linkedin.png" alt="linkdin" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/piumika-dilshan-b69018252/"
+        target="_blank"
+      >
+        <img src="assests/images/youtube.png" alt="Youtube" />
+      </a>
+      <a href="https://web.facebook.com/dilshan.arrora/" target="_blank">
+        <img src="assests/images/facebook.png" alt="facebook" />
+      </a>
+      </div>
+      
+    </footer>
     </main>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
