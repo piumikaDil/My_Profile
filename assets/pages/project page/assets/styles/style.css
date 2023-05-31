@@ -366,8 +366,6 @@ body {
   margin-bottom: 30px;
 }
 
- .article-wrapper{
- }
 
 @media screen and (max-width: 960px) {
   article {
@@ -412,6 +410,20 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+@media (max-width: 380px) {
+  .result-line{
+    flex-direction: column;
+  }
+
+  .result-line>div{
+    margin-left: 130px;
+  }
+
+  .txt-1,.txt-2{
+    margin-left: -30px;
+  }
 }
 
 
