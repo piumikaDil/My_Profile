@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .div {
+            width: 120px;
+            height: 30px;
+            background-color: antiquewhite;
+            position: relative;
+            left: 350PX;
+            top: 300px;
+            float: left;
+            margin: 0 0 0 5PX;
+            border: 2px solid black;
+        }
+
+        .btn {
+            width: 70px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+
+        }
+
+        .btn-sec {
+            position: absolute;
+            left: 700px;
+            top: 250px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <audio class="audio" src="assets/audio/Knight Rider Sms ! Knight Rider ! Theme.mp3"></audio>
+    <section class="btn-sec">
+        <button class="btn start-btn">START</button>
+        <button class="btn stop-btn">STOP</button>
+    </section>
+
+    <section id="light-panel">
+        <div class="div div-1"></div>
+        <div class="div div-2"></div>
+        <div class="div div-3"></div>
+        <div class="div div-4"></div>
+        <div class="div div-5"></div>
+        <div class="div div-6"></div>
+        <div class="div div-7"></div>
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script>
+
+        let lightNumber = 0
+        let direction = "RIGHT"
+        let intervalID = 0
+
+        let ligths = $(".div");
+        console.log(ligths);
+
+        function updateLights() {
+            $(".div").css("background-color", "white");
+            ligths[lightNumber].style.backgroundColor = "red"
+
+            if (lightNumber > 0) {
+                ligths[lightNumber - 1].style.backgroundColor = "pink"
+            }
+
+            if (lightNumber < 6) {
+                ligths[lightNumber + 1].style.backgroundColor = "pink"
+            }
+
+            if (lightNumber === 6) {
+                direction = "LEFT"
+            }
+
+            if (lightNumber === 0) {
+                direction = "RIGHT"
+            }
+
+            if (direction === "RIGHT") {
+                lightNumber++;
+            } else {
+                lightNumber--;
+            }
+
+        }
+
+
+        $(".start-btn").on("click", () => {
+            $(".audio")[0].play()
+            intervalID = setInterval(updateLights, 80)
+
+
+        })
+
+        $(".stop-btn").on("click", () => {
+            $(".audio")[0].pause()
+            clearInterval(intervalID)
+
+        })
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
