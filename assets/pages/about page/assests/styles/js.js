@@ -38,61 +38,61 @@ function updateImg() {
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-ScrollReveal({
-  reset: true,
-  distance: "100px",
-  duration: 1900,
-  delay: 300,
-});
+// ScrollReveal({
+//   reset: true,
+//   distance: "100px",
+//   duration: 1900,
+//   delay: 300,
+// });
 
-ScrollReveal().reveal(".main-headders", {
-  delay: 100,
-});
+// ScrollReveal().reveal(".main-headders", {
+//   delay: 100,
+// });
 
-ScrollReveal().reveal("#myName", {
-  delay: 400,
-});
+// ScrollReveal().reveal("#myName", {
+//   delay: 400,
+// });
 
-ScrollReveal().reveal(".sub-title", {
-  delay: 700,
-});
+// ScrollReveal().reveal(".sub-title", {
+//   delay: 700,
+// });
 
-ScrollReveal().reveal(".paragraph ", {
-  delay: 1000,
-});
+// ScrollReveal().reveal(".paragraph ", {
+//   delay: 1000,
+// });
 
-ScrollReveal().reveal(".hire-btn", {
-  delay: 1300,
-});
+// ScrollReveal().reveal(".hire-btn", {
+//   delay: 1300,
+// });
 
-ScrollReveal().reveal(".address1", {
-  delay: 100,
-  origin: "left",
-});
+// ScrollReveal().reveal(".address1", {
+//   delay: 100,
+//   origin: "left",
+// });
 
-ScrollReveal().reveal(".address2", {
-  delay: 300,
-  origin: "right",
-});
+// ScrollReveal().reveal(".address2", {
+//   delay: 300,
+//   origin: "right",
+// });
 
-ScrollReveal().reveal("#intro-article", {
-  delay: 300,
-  origin: "right",
-});
+// ScrollReveal().reveal("#intro-article", {
+//   delay: 300,
+//   origin: "right",
+// });
 
-ScrollReveal().reveal(".aside", {
-  delay: 300,
-  origin: "left",
-});
+// ScrollReveal().reveal(".aside", {
+//   delay: 300,
+//   origin: "left",
+// });
 
-ScrollReveal().reveal(".pos-system1", { delay: 300, origin: "left" });
-ScrollReveal().reveal(".pos-system2", { delay: 600, origin: "left" });
-ScrollReveal().reveal(".pos-system3", { delay: 900, origin: "left" });
-ScrollReveal().reveal(".h2-tag", { delay: 300, origin: "bottom" });
-ScrollReveal().reveal("h5", { delay: 600, origin: "bottom" });
-ScrollReveal().reveal("form", { delay: 800, origin: "bottom" });
-ScrollReveal().reveal(".submit-button", { delay: 800, origin: "bottom" });
-ScrollReveal().reveal(".slider-container", { delay: 800, origin: "bottom" });
+// ScrollReveal().reveal(".pos-system1", { delay: 300, origin: "left" });
+// ScrollReveal().reveal(".pos-system2", { delay: 600, origin: "left" });
+// ScrollReveal().reveal(".pos-system3", { delay: 900, origin: "left" });
+// ScrollReveal().reveal(".h2-tag", { delay: 300, origin: "bottom" });
+// ScrollReveal().reveal("h5", { delay: 600, origin: "bottom" });
+// ScrollReveal().reveal("form", { delay: 800, origin: "bottom" });
+// ScrollReveal().reveal(".submit-button", { delay: 800, origin: "bottom" });
+// ScrollReveal().reveal(".slider-container", { delay: 800, origin: "bottom" });
 
 // $(document).ready(() => {
 //   // setTimeout(() => {

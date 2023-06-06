@@ -44,7 +44,7 @@ html {
   font-weight: bolder;
   font-size: 60px;
   letter-spacing: -4px;
-  margin: 0;
+  margin: 20px 0 20px 0;
 }
 
 #mainImage {
@@ -126,6 +126,26 @@ header {
   color: white;
   border: 2px solid #ff416c;
   border-color: transparent;
+}
+
+.sub-title {
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  margin-bottom: 15px;
+}
+
+.h2-tag {
+  margin: 20px 0 20px 0;
+}
+
+h5 {
+  margin-top: 20px;
+}
+
+#projects>div>p {
+  margin-bottom: 20px;
 }
 
 #menu-icon {
@@ -236,6 +256,7 @@ header {
 p {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
   color: #8d8d8d;
 }
 
@@ -304,7 +325,9 @@ p {
 }
 
 #intro-article {
-  margin-left: 100px;
+  margin-left: 0px;
+  margin-top: 10px;
+  width: 650px;
 }
 
 .headders {
@@ -325,7 +348,7 @@ p {
 .form-sec {
   position: relative;
   background-color: #ccd1e5;
-  width: 100vw;
+  width: 98.9vw;
 }
 
 .message {
@@ -375,6 +398,10 @@ a {
   font-weight: bold;
 }
 
+.mail {
+  margin-top: 100px;
+}
+
 #min-contactt {
   margin-top: 40px;
 }
@@ -422,7 +449,7 @@ a {
 }
 
 .back-btn {
-  width: 100vw;
+  width: 98.9vw;
   height: 50px;
   border: none;
   color: white;
@@ -487,7 +514,7 @@ a {
 
 .address-icons {
   display: flex;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .address-icons>p {
@@ -545,11 +572,144 @@ a {
   height: auto;
 } */
 
+/* ////////////////////////////////////// */
 
+.skills {
+  display: flex;
+}
+
+.wrapper {
+  width: 400px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+}
+
+.skill {
+  margin-bottom: 35px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.skill>p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1716;
+  margin: 0;
+}
+
+.skill:before {
+  width: 100%;
+  height: 15px;
+  border-radius: 15px;
+  content: "";
+  display: block;
+  position: absolute;
+  background: #CCD1E5;
+  bottom: 0;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 15px;
+  background: #001C59;
+  border-radius: 15px;
+  display: block;
+  position: relative;
+}
+
+.skill-bar span {
+  position: absolute;
+  top: -30px;
+  padding: 0;
+  font-size: 18px;
+  padding: 3px 0;
+  font-weight: 500;
+}
+
+.skill-1 {
+  margin-left: 220px;
+}
+
+.skill-2 {
+  margin-left: 0;
+}
+
+.skill-bar {
+  position: relative;
+}
+
+.skill1 .skill-count1 {
+      padding-top: 10px;
+  right: 0;
+}
+
+.skill1 {
+  width: 85%;
+}
+
+.skill2 {
+  width: 80%;
+}
+
+.skill2 .skill-count2 {
+      padding-top: 10px;
+  right: 0;
+}
+
+.skill3 {
+  width: 75%;
+}
+
+.skill3 .skill-count3 {
+      padding-top: 10px;
+  right: 0;
+}
+
+.skill4 .skill-count4 {
+  padding-top: 10px;
+  right: 0;
+}
+
+.skill4 {
+  width: 75%;
+}
+
+.skill5 .skill-count5 {
+  padding-top: 10px;
+  right: 0;
+}
+
+.skill5 {
+  width: 95%;
+}
+
+.skill6 .skill-count6 {
+  padding-top: 10px;
+  right: 0;
+}
+
+.skill6 {
+  width: 70%;
+}
+
+.skill7 .skill-count7 {
+  padding-top: 10px;
+  right: 0;
+}
+
+.skill7 {
+  width: 55%;
+}
+
+/* ////////////////////////////////////// */
 @media (max-width: 380px) {
   #projects {
     flex-direction: column;
     margin-left: 35px;
+  }
+
+  .contact-btn {
+    visibility: hidden;
   }
 
   .project-images {
@@ -559,6 +719,52 @@ a {
   .main-section {
     background-image: none;
   }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .skill-1 {
+    margin-left: 30px;
+  }
+
+    .skill-2 {
+      margin-left: 30px;
+    }
+
+  .skill:before {
+    width: 75%;
+
+  }
+
+  .skill-bar {
+    width: 75%;
+
+  }
+
+  .skill1 {
+    width: 65%;
+  }
+
+  .skill2 {
+    width: 55%;
+  }
+
+  .skill3,.skill4{
+    width: 50%;
+  }
+
+  .skill5{
+    width: 70%;
+  }
+
+  .skill6{
+    width: 45%;
+  }
+
+     .skill7 {
+       width: 40%;
+     }
 
   #article {
     left: 20px;
@@ -577,6 +783,8 @@ a {
 
   #intro-article {
     margin-left: 35px;
+    width: 310px;
+
   }
 
   #about-image {
@@ -614,6 +822,7 @@ a {
 
   form {
     margin: -30px;
+    width: 300px;
   }
 
   .message {
@@ -635,6 +844,7 @@ a {
   }
 
   .h2-tag {
+
     font-size: 20px;
   }
 
