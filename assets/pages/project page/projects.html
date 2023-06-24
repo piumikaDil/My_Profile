@@ -18,7 +18,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- link AOS animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
   <title>Projects | Piumika</title>
 
@@ -26,67 +27,53 @@
 </head>
 
 <body>
-  <header id="header">
-    <nav>
-      <img id="logo" src="assets/images/logo.png" style="z-index: 9999" alt="logo" />
-      <ul id="ul">
-        <li class="li">Home</li>
-        <li class="li"><a href="../about page/about.html">About</a></li>
-        <li class="li"><a href=""></a> Skills</li>
-        <li class="li"><a href="projects.html">Projects</a></li>
-        <li class="li"><a href="../gallery page/gallery.html">Gallery</a></li>
-        <li class="li"><a href="../contact page/contact.html">Contact</a> </li>
-      </ul>
-      <button class="button contact-button">QUICK CONTACT</button>
-    </nav>
+  <header>
+    <a href="../../../index.html" class="logo">Piumika</a>
+    <ul class="navbar">
+      <li><a href="../../../index.html">Home</a></li>
+      <li><a href="/assets/pages/about page/about.html">About</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a class="active" href="/assets/pages/project page/projects.html">Projects</a></li>
+      <li><a href="/assets/pages/contact page/contact.html">Contact</a> </li>
+    </ul>
+
+    <div class="main">
+      <button class="contact-btn">QUICK CONTACT</button>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
   </header>
   <section class="main-sec">
     <div class="headders">
-      <h4 class="main-headders" id="main-headder-2" data-aos="fade-up" data-aos-duration="1000">Let’s see My Projects</h5>
-        <h2 class="main-headders" id="main-headder" data-aos="fade-up" data-aos-duration="1200">What Are My Best <span class="span">Projects?</span> </h2>
+      <h4 class="main-headders" id="main-headder-2" data-aos="fade-up" data-aos-duration="1000">Let’s see My Projects
+        </h5>
+        <h2 class="main-headders" id="main-headder" data-aos="fade-up" data-aos-duration="1200">What Are My Best <span
+            class="span">Projects?</span> </h2>
     </div>
 
-    <img id="img" src="assets/images/Project.jpeg" alt="Project main image" data-aos="fade-up" data-aos-duration="1500" />
+    <img id="img" src="assets/images/Project.jpeg" alt="Project main image" data-aos="fade-up"
+      data-aos-duration="1500" />
   </section>
   <h2 class="main-headders title-pro" data-aos="fade-up" data-aos-duration="1000"><u>PROJECTS</u> </h2>
   <section class="projects">
     <div data-aos="fade-up" data-aos-duration="1000">
       <img class="project-images" src="assets/images/My POS.png" alt="Pharmacy pos system" width="250px" />
-      <!-- <h2 class="main-headders">POS SYSTEM</h2> -->
-      <!-- <p>
-          This is a POS System for Pharmacy. <br />
-          I developed this using Java,JavaFx <br />
-          And MySQL.(This project is final <br />
-          project in My 1st semester).
-        </p> -->
+      
       <div class="btn-group">
         <button class="button">WATCH</button><br /><br />
         <button class="btn-git"><i class="fa-brands fa-github"></i> <span class="txt-span">GitHub</span> </button>
       </div>
     </div>
     <div data-aos="fade-up" data-aos-duration="1000">
-      <img class="project-images" src="assets/images/My POS.png" alt="Pharmacy pos system" width="250px" />
-      <!-- <h2 class="main-headders">POS SYSTEM</h2> -->
-      <!-- <p>
-          This is a POS System for Pharmacy. <br />
-          I developed this using Java,JavaFx <br />
-          And MySQL.(This project is final <br />
-          project in My 1st semester).
-        </p> -->
+      <img class="project-images" src="assets/images/pos pd traders.png" alt="Pharmacy pos system" width="250px" />
+      
       <div class="btn-group">
         <button class="button">WATCH</button><br /><br />
         <button class="btn-git"><i class="fa-brands fa-github"></i><span class="txt-span">GitHub</span></button>
       </div>
     </div>
     <div data-aos="fade-up" data-aos-duration="1000">
-      <img class="project-images" src="assets/images/My POS.png" alt="Pharmacy pos system" width="250px" />
-      <!-- <h2 class="main-headders">POS SYSTEM</h2> -->
-      <!-- <p>
-          This is a POS System for Pharmacy. <br />
-          I developed this using Java,JavaFx <br />
-          And MySQL.(This project is final <br />
-          project in My 1st semester).
-        </p> -->
+      <img class="project-images" src="assets/images/weather.png" alt="Pharmacy pos system" width="250px" />
+      
       <div class="btn-group">
         <button class="button">WATCH</button><br /><br />
         <button class="btn-git"><i class="fa-brands fa-github"></i><span class="txt-span">GitHub</span></button>
@@ -96,7 +83,7 @@
   <h2 class="main-headders title-pro2" data-aos="fade-up" data-aos-duration="1000"><u>ASSIGNMENTS</u> </h2>
   <section class="articles">
 
-    <article data-aos="zoom-in" data-aos-duration="1000"  >
+    <article data-aos="zoom-in" data-aos-duration="1000">
       <div class="article-wrapper">
         <figure>
           <img src="assets/images/assg-1.png" alt="" />
@@ -104,7 +91,8 @@
         <div class="article-body">
           <h2>Assignment 01</h2>
 
-          <a href="#" target="_blank" class="read-more">
+          <a href="https://www.figma.com/file/bYRjDGFSm0sC5okQajkvFp/Untitled?type=design&node-id=0-1&t=lTnQS5UYpE5032sn-0"
+            target="_blank" class="read-more">
             GitHub <span class="sr-only">about this is some title</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd"
@@ -112,6 +100,7 @@
                 clip-rule="evenodd" />
             </svg>
           </a>
+
         </div>
       </div>
     </article>
@@ -267,7 +256,6 @@
         </figure>
         <div class="article-body">
           <h2>Assignment 09</h2>
-          <p>this is using html and css and create js pos system</p>
 
           <a href="https://github.com/piumikaDil/my-profile/tree/main/assignment/Assignment_09" class="read-more">
             GitHub <span class="sr-only">about this is some title</span>
@@ -337,6 +325,8 @@
     </div>
 
   </footer>
+
+  <script src="assets/js/js.js"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

@@ -13,24 +13,28 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <!-- link normalize -->
   <link rel="stylesheet" href="../../style/CSS/normalize.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
 
   <title>About | Piumika</title>
 </head>
 
 <body>
-  <header id="header">
-    <nav>
-      <img id="logo" src="assests/images/logo.png" style="z-index: 9999" alt="logo" />
-      <ul id="ul">
-        <li class="li">Home</li>
-        <li class="li"><a href="about.html">About</a></li>
-        <li class="li"><a href=""></a> Skills</li>
-        <li class="li"><a href="../project page/projects.html">Projects</a></li>
-        <li class="li"><a href="../gallery page/gallery.html">Gallery</a></li>
-        <li class="li"><a href="../contact page/contact.html">Contact</a> </li>
-      </ul>
-      <button class="button contact-button">QUICK CONTACT</button>
-    </nav>
+  <header>
+    <a href="../../../index.html" class="logo">Piumika</a>
+    <ul class="navbar">
+      <li><a href="../../../index.html">Home</a></li>
+      <li><a href="/assets/pages/about page/about.html">About</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="/assets/pages/project page/projects.html">Projects</a></li>
+      <li><a class="active" href="/assets/pages/contact page/contact.html">Contact</a> </li>
+    </ul>
+  
+    <div class="main">
+      <button class="contact-btn">QUICK CONTACT</button>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
   </header>
   <main>
     <section class="main-section">
@@ -109,7 +113,7 @@
         </div>
       </div>
       <div class="container left-container">
-        <img src="about page/assests/images/ijse.png" alt="Ijse" />
+        <img src="assests/images/ijse.png" alt="Ijse" />
         <div class="text-box">
           <h3 class="time-line-header">IJSE</h3>
           <small>2007-2020</small>
@@ -122,7 +126,7 @@
         </div>
       </div>
       <div class="container right-container">
-        <img src="about page/assests/images/javaa.jpg" alt="Java" />
+        <img src="assests/images/javaa.jpg" alt="Java" />
         <div class="text-box">
           <h3 class="time-line-header">JAVA</h3>
           <small>2007-2020</small>
@@ -135,7 +139,7 @@
         </div>
       </div>
       <div class="container left-container">
-        <img src="about page/assests/images/MySql.jpg" alt="MySql" />
+        <img src="assests/images/MySql.jpg" alt="MySql" />
         <div class="text-box">
           <h3 class="time-line-header">MYSQLL</h3>
           <small>2007-2020</small>
@@ -147,54 +151,7 @@
           <span class="left-container-arrow"></span>
         </div>
       </div>
-      <!-- <div>
-          <img src="assets/BW.png" alt="British Way" style="width: 40px" />
-          <div>
-            <h3>BRITISH WAY</h3>
-            <small>2007-2020</small>
-            <p>
-              Wewalawewa maha vidyalaya is My School And it is My second mother.
-              weoi wiiqo iqwj iqja iwqj ako iqoa iqwoq ioaoqaoq qooq aoa qoa
-              oqwq qoiq..
-            </p>
-          </div>
-        </div>
-        <div>
-          <img src="assets/ijse.png" alt="ijse" style="width: 40px" />
-          <div>
-            <h3>IJSE</h3>
-            <small>2007-2020</small>
-            <p>
-              Wewalawewa maha vidyalaya is My School And it is My second mother.
-              weoi wiiqo iqwj iqja iwqj ako iqoa iqwoq ioaoqaoq qooq aoa qoa
-              oqwq qoiq..
-            </p>
-          </div>
-        </div>
-        <div>
-          <img src="assets/javaa.jpg" alt="Java" style="width: 40px" />
-          <div>
-            <h3>JAVA</h3>
-            <small>2007-2020</small>
-            <p>
-              Wewalawewa maha vidyalaya is My School And it is My second mother.
-              weoi wiiqo iqwj iqja iwqj ako iqoa iqwoq ioaoqaoq qooq aoa qoa
-              oqwq qoiq..
-            </p>
-          </div>
-        </div>
-        <div>
-          <img src="assets/MySql.jpg" alt="MySql" style="width: 40px" />
-          <div>
-            <h3>MYSQL</h3>
-            <small>2007-2020</small>
-            <p>
-              Wewalawewa maha vidyalaya is My School And it is My second mother.
-              weoi wiiqo iqwj iqja iwqj ako iqoa iqwoq ioaoqaoq qooq aoa qoa
-              oqwq qoiq..
-            </p>
-          </div>
-        </div> -->
+     
     </section>
     <footer class="footer">
       <div>
@@ -216,6 +173,8 @@
   </main>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="assests/styles/js.js"></script>
 
   <script>
     AOS.init();

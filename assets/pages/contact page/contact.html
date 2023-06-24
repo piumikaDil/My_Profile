@@ -15,24 +15,28 @@
   <!-- import aos animations -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <title>Contact | Piumika</title>
 </head>
 
 <body>
-  <header id="header">
-    <nav>
-      <img id="logo" src="assets/images/logo.png" style="z-index: 9999" alt="logo" />
-      <ul id="ul">
-        <li class="li">Home</li>
-        <li class="li"><a href="about.html">About</a></li>
-        <li class="li"><a href=""></a> Skills</li>
-        <li class="li"><a href="projects.html">Projects</a></li>
-        <li class="li"><a href="gallery.html">Gallery</a></li>
-        <li class="li">Contact</li>
-      </ul>
-      <button class="button contact-button">QUICK CONTACT</button>
-    </nav>
-  </header>
+<header>
+  <a href="../../../index.html" class="logo">Piumika</a>
+  <ul class="navbar">
+    <li><a href="../../../index.html">Home</a></li>
+    <li><a href="/assets/pages/about page/about.html">About</a></li>
+    <li><a href="#">Skills</a></li>
+    <li><a  href="/assets/pages/project page/projects.html">Projects</a></li>
+    <li><a class="active" href="/assets/pages/contact page/contact.html">Contact</a> </li>
+  </ul>
+
+  <div class="main">
+    <button class="contact-btn">QUICK CONTACT</button>
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </div>
+</header>
   <section class="headders">
     <h2 class="main-headders h2-tag" data-aos="fade-up" data-aos-duration="1000">
       Contact With<span class="span"> Me</span>
@@ -42,7 +46,7 @@
   <section class="form-sec">
 
 
-    <form data-aos="fade-up" data-aos-duration="2000">
+    <form action="https://formsubmit.co/b4c56410e6af8d714ba987e963b236a9" method="POST" data-aos="fade-up" data-aos-duration="2000">
       <h2>Get In Touch</h2>
       <div class="form">
         <input class="input-1 first-input" type="text" placeholder="Your Name" />
@@ -72,6 +76,8 @@
     </div>
 
   </footer>
+
+  <script src="assets/js/contact.js"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
