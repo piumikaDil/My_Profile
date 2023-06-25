@@ -22,21 +22,21 @@
 </head>
 
 <body>
-<header>
-  <a href="../../../index.html" class="logo">Piumika</a>
-  <ul class="navbar">
-    <li><a href="../../../index.html">Home</a></li>
-    <li><a href="/assets/pages/about page/about.html">About</a></li>
-    <li><a href="#">Skills</a></li>
-    <li><a  href="/assets/pages/project page/projects.html">Projects</a></li>
-    <li><a class="active" href="/assets/pages/contact page/contact.html">Contact</a> </li>
-  </ul>
+  <header>
+    <a href="../../../index.html" class="logo">Piumika</a>
+    <ul class="navbar">
+      <li><a href="../../../index.html">Home</a></li>
+      <li><a href="/assets/pages/about page/about.html">About</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="/assets/pages/project page/projects.html">Projects</a></li>
+      <li><a class="active" href="/assets/pages/contact page/contact.html">Contact</a> </li>
+    </ul>
 
-  <div class="main">
-    <button class="contact-btn">QUICK CONTACT</button>
-    <div class="bx bx-menu" id="menu-icon"></div>
-  </div>
-</header>
+    <div class="main">
+      <button class="contact-btn">QUICK CONTACT</button>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+  </header>
   <section class="headders">
     <h2 class="main-headders h2-tag" data-aos="fade-up" data-aos-duration="1000">
       Contact With<span class="span"> Me</span>
@@ -46,14 +46,14 @@
   <section class="form-sec">
 
 
-    <form action="https://formsubmit.co/b4c56410e6af8d714ba987e963b236a9" method="POST" data-aos="fade-up" data-aos-duration="2000">
+    <form onsubmit="sendEmail(); reset(); return false" method="POST" data-aos="fade-up" data-aos-duration="2000">
       <h2>Get In Touch</h2>
       <div class="form">
-        <input class="input-1 first-input" type="text" placeholder="Your Name" />
-        <input class="input-1" type="email" placeholder="Email" /><br /><br />
+        <input class="input-1 first-input" type="text" placeholder="Your Name" id="name" />
+        <input class="input-1" type="email" placeholder="Email" id="email" /><br /><br />
       </div>
-      <input class="message subject" type="text" placeholder="Subject" /><br /><br />
-      <textarea name="message" class="message" cols="30" rows="10" placeholder="Message..."></textarea>
+      <input class="message subject" type="text" placeholder="Subject" id="subject" /><br /><br />
+      <textarea name="message" class="message" cols="30" rows="10" placeholder="Message..." id="msg"></textarea>
       <br /><br />
       <input class="button submit-button" type="submit" /><br /><br />
     </form>
@@ -84,6 +84,8 @@
   <script>
     AOS.init();
   </script>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>

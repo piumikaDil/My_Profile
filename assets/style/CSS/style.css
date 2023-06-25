@@ -703,7 +703,7 @@ a {
 }
 
 /* ////////////////////////////////////// */
-@media (max-width: 380px) {
+@media (max-width: 395px) {
   #projects {
     flex-direction: column;
     margin-left: 35px;

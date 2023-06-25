@@ -19,6 +19,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+
 </head>
 
 <body>
@@ -55,7 +57,7 @@
           will hope to be a skillful Software Engineer.
         </p>
         <a href="assets/pages/contact page/contact.html"><button class="button hire-btn" data-aos="fade-up"
-            data-aos-duration="3000">HIRE ME</button></a>
+            data-aos-duration="3000" >HIRE ME</button></a>
       </article>
     </section>
 
@@ -233,15 +235,15 @@
         <h5 data-aos="fade-up" data-aos-duration="2500">Java | MySQL | OOP | JavaFX | HTML | CSS | Java Script</h5>
       </section>
 
-      <form data-aos="fade-up" data-aos-duration="2000">
+      <form data-aos="fade-up" data-aos-duration="2000" onsubmit="sendEmail(); reset(); return false">
         <div class="form">
-          <input class="input-1 first-input" type="text" placeholder="Your Name" />
-          <input class="input-1" type="email" placeholder="Email" /><br /><br />
+          <input class="input-1 first-input" type="text" placeholder="Your Name" id="name" />
+          <input class="input-1" type="email" placeholder="Email" id="email" /><br /><br />
         </div>
-        <input class="message subject" type="text" placeholder="Subject" /><br /><br />
-        <textarea name="message" class="message" cols="30" rows="10" placeholder="Message..."></textarea>
+        <input class="message subject" type="text" placeholder="Subject" id="subject" /><br /><br />
+        <textarea name="message" class="message" cols="30" rows="10" placeholder="Message..." id="msg"></textarea>
         <br /><br />
-        <input class="button submit-button" type="submit" /><br /><br />
+      <input class="button submit-button" type="submit" /><br /><br />
       </form>
     </section>
   </main>
@@ -324,6 +326,9 @@
   <script src="assets/pages/about page/assests/styles/js.js"></script>
   <script src="assets/style/JS/video_pop.js"></script>
   <script src="assets/style/JS/main.js"></script>
+  <!-- Email sender -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
 </body>
 
 </html>
