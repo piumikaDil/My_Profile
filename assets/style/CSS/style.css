@@ -640,7 +640,7 @@ a {
 }
 
 .skill1 .skill-count1 {
-      padding-top: 10px;
+  padding-top: 10px;
   right: 0;
 }
 
@@ -653,7 +653,7 @@ a {
 }
 
 .skill2 .skill-count2 {
-      padding-top: 10px;
+  padding-top: 10px;
   right: 0;
 }
 
@@ -662,7 +662,7 @@ a {
 }
 
 .skill3 .skill-count3 {
-      padding-top: 10px;
+  padding-top: 10px;
   right: 0;
 }
 
@@ -703,7 +703,7 @@ a {
 }
 
 /* ////////////////////////////////////// */
-@media (max-width: 395px) {
+@media (max-width: 380px) {
   #projects {
     flex-direction: column;
     margin-left: 35px;
@@ -729,9 +729,9 @@ a {
     margin-left: 30px;
   }
 
-    .skill-2 {
-      margin-left: 30px;
-    }
+  .skill-2 {
+    margin-left: 30px;
+  }
 
   .skill:before {
     width: 75%;
@@ -751,21 +751,22 @@ a {
     width: 55%;
   }
 
-  .skill3,.skill4{
+  .skill3,
+  .skill4 {
     width: 50%;
   }
 
-  .skill5{
+  .skill5 {
     width: 70%;
   }
 
-  .skill6{
+  .skill6 {
     width: 45%;
   }
 
-     .skill7 {
-       width: 40%;
-     }
+  .skill7 {
+    width: 40%;
+  }
 
   #article {
     left: 20px;
